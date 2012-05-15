@@ -35,5 +35,5 @@ def readwrite(origfile, newfile):
                     with open(newfile, 'ab') as n:
                         writer = csv.writer(n, delimiter='\n')
                         writer.writerow([name])
-            except IOError:
+            except IOError: # This error occurs when too many requests are made to the server too quickly
                 time.sleep(5)
