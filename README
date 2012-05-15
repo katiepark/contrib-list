@@ -1,0 +1,3 @@
+This is a simple crawler that uses the Illinois State Board of Elections contributions search. It reads a csv of names formatted "Lastname, Firstname" and returns a csv of those names that returned positive for contributions.
+
+It's mainly intended to narrow down a list of many names. I'm looking for feedback on the try ... except statement, which allows the crawler to pause when it experiences throttling from the server.
